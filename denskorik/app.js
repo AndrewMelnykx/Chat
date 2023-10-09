@@ -10,7 +10,7 @@ function calc(operation, a, b) {
       return a - b;
 
     default:
-      return 0;
+      return "enter valid value";
   }
 }
 
