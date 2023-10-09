@@ -1,19 +1,36 @@
-function calc(operation, a, b) {
-  switch (operation) {
-    case "add":
-      return a + b;
+const ADD = "add";
+const SUBTRACT = "subtract";
+const MULTI = "multi";
+const DIVIDE = "divide";
+const FAULT = "enter valid value";
 
-    case "multi":
-      return a * b;
+function calc(operation, firstNum, secondNum) {
+  if (typeof firstNum !== "number" || typeof secondNum !== "number") {
+    return FAULT;
+  } else {
+    switch (operation) {
+      case ADD:
+        return firstNum + secondNum;
 
-    case "subtract":
-      return a - b;
+      case MULTI:
+        return firstNum * secondNum;
 
-    default:
-      return "enter valid value";
+      case SUBTRACT:
+        return firstNum - secondNum;
+
+      case DIVIDE:
+        if (secondNum === 0) {
+          return FAULT;
+        }
+        return firstNum / secondNum;
+
+      default:
+        return FAULT;
+    }
   }
 }
 
-console.log(calc("add", 1, 2));
-console.log(calc("multi", 1, 2));
-console.log(calc("subtract", 3, 2));
+console.log(calc(ADD, 1, 2));
+console.log(calc(MULTI, 1, 2));
+console.log(calc(SUBTRACT, 3, 2));
+console.log(calc(DIVIDE, 25, 5));
