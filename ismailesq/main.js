@@ -178,5 +178,34 @@ console.log(calc('add', 1, 2));
 console.log(calc('multi', 1, 2));
 console.log(calc('subtract', 3, 2));
 
-// День 13. Code review
+// День 14. Циклы
 
+// День 15. Циклы
+
+let i = 1;
+while (i < 20) {
+   console.log(i)
+   i = i + 1;
+}
+
+let k = 1;
+do {
+   console.log(k);
+   k = k + 1;
+} while (k < 20);
+
+for (let j = 1; j < 20; j = j + 1) {
+   console.log(j);
+}
+
+while (true) {
+   console.log('begin');
+   *break;*
+   console.log('not end');
+}
+console.log('end');
+
+for (let l = 0; l < 10; l = l + 1) {
+   *if (l % 2 == 0) continue;*
+   console.log(l);
+}
