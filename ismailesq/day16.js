@@ -1,6 +1,6 @@
 // День 16. Объекты: введение
 
-/*const phoneBook = {
+const phoneBook = {
    "Братишка": 79269076000,
    "Нур-Мухаммад": 79680571169,
    "Геваргиз Лазарев": 7964588155
@@ -69,7 +69,7 @@ const dateOfBirthday = {
 };
 
 dateOfBirthday.log();
-*/
+
 
 const dateOfBirthday = {
    list: {
