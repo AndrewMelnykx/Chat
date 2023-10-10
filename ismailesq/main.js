@@ -10,9 +10,9 @@ console.log(1 + 1);
 let age = 0;
 console.log(age);
 
-const a = 6;
-const b = 7;
-console.log ( a + b);
+const e = 6;
+const f = 7;
+console.log (e + f);
 
 
 // день 6. Преобразование типов и базовые операторы
@@ -200,12 +200,12 @@ for (let j = 1; j < 20; j = j + 1) {
 
 while (true) {
    console.log('begin');
-   *break;*
+   break;
    console.log('not end');
 }
 console.log('end');
 
 for (let l = 0; l < 10; l = l + 1) {
-   *if (l % 2 == 0) continue;*
+   if (l % 2 == 0) continue;
    console.log(l);
 }
