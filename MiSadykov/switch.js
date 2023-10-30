@@ -16,5 +16,3 @@ function calc(operation, a, b)
 }
 
 console.log(calc('add', 1, 2 ));
-
-
